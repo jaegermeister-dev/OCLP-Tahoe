@@ -1,5 +1,10 @@
 # OCLP-Tahoe
 
+> [!IMPORTANT]
+> **This is NOT a release from the official OpenCore Legacy Patcher (OCLP) team.** OCLP-Tahoe is independently developed and maintained, and is not affiliated with or supported by the official OCLP team.
+>
+> **All OCLP-Tahoe issues, bug reports and support requests must be raised through [this project's GitHub Issues](https://github.com/jaegermeister-dev/OCLP-Tahoe/issues) or [r/OCLP_Tahoe](https://www.reddit.com/r/OCLP_Tahoe/). Do NOT direct them to the official OCLP team or post them on the official OCLP subreddit.**
+
 Run macOS Tahoe on selected unsupported MacBook Pro models.
 
 OCLP-Tahoe is an independently maintained project built on OpenCore and OpenCore Legacy Patcher. It is **not affiliated with the official OpenCore Legacy Patcher team or subreddit**. Please bring OCLP-Tahoe support requests here or to [r/OCLP_Tahoe](https://www.reddit.com/r/OCLP_Tahoe/), not to the official OCLP support channels.
