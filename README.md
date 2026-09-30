@@ -56,7 +56,7 @@ The macOS installer and operating-system installation use Apple's installer. The
 ### 3. Complete Setup Assistant
 
 8. Proceed through Setup Assistant. **Skip signing in with an Apple ID** for this installation procedure; Apple services have not been validated.
-9. At the software-update choice, select **Download Automatically**, rather than accepting the default **Continue** choice. The unpatched setup can be extremely slow.
+9. At the software-update choice, select **Download Automatically**, rather than the default **Continue** choice. This keeps automatic update installation off from the start, saving you from having to disable it after booting into Tahoe and reducing the risk of an unintended macOS update. Downloads remain enabled, but updates should not install automatically. The unpatched setup can be extremely slow.
 10. In the successful test, Setup Assistant remained stuck at this exact step. After waiting approximately **one minute**, the maintainer held the power button until the Mac turned off. On the next boot, Tahoe reached the login screen. **If you encounter that same persistent Setup Assistant hang, this is the workaround used in the tested sequence.** If setup progresses normally, let it finish. A forced power-off is not risk-free: do not use this workaround while macOS installation, EFI installation or root patching is running.
 11. Start the Mac holding **Option**, select the **USB EFI**, then boot the installed Tahoe volume and log in.
 
