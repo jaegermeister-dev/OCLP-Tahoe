@@ -4,8 +4,6 @@ Run macOS Tahoe on selected unsupported MacBook Pro models.
 
 OCLP-Tahoe is an independently maintained project built on OpenCore and OpenCore Legacy Patcher. It is **not affiliated with the official OpenCore Legacy Patcher team or subreddit**. Please bring OCLP-Tahoe support requests here or to [r/OCLP_Tahoe](https://www.reddit.com/r/OCLP_Tahoe/), not to the official OCLP support channels.
 
-> Private release draft for maintainer review. No release download has been published in this repository yet.
-
 ## Supported hardware and macOS
 
 | Target | Status |
