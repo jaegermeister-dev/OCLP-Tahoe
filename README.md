@@ -14,7 +14,7 @@ OCLP-Tahoe is an independently maintained project built on OpenCore and OpenCore
 | **MacBookPro11,4** — 15-inch Mid 2015, Intel Iris Pro only | **Experimental and untested on actual 11,4 hardware.** Intel Iris Pro has worked on the 11,5, but this does not establish complete 11,4 compatibility. |
 | Other Mac models | Not supported by this release. |
 
-The root patcher targets **macOS Tahoe 26.7.1, build 25G241**. Do not assume newer Tahoe builds are compatible. This application does not create installers or apply root patches for Big Sur, Monterey, Ventura, Sonoma or Sequoia.
+The root patcher targets **macOS Tahoe 26.7.1, build 25G241**. Do not assume newer or older Tahoe builds are compatible. This application does not create installers or apply root patches for Big Sur, Monterey, Ventura, Sonoma or Sequoia.
 
 ## Read before starting
 
@@ -34,7 +34,7 @@ The root patcher targets **macOS Tahoe 26.7.1, build 25G241**. Do not assume new
 | **Installer/First Boot** | On the USB: boots the Tahoe installer, installation restarts and the first unpatched Tahoe boot. Based on the captured official OCLP 3.0.0 beta-generated OpenCore 1.0.5 EFI. |
 | **Installed Tahoe** | On the internal SSD: installed after reaching the Tahoe desktop, before applying root patches. Reproduces the tested installed-system EFI. |
 
-Do not substitute one for the other.
+Do not substitute one for the other. **Before installing an EFI, carefully check both the selected EFI option and the destination drive:** install **Installer/First Boot to the USB drive**, and **Installed Tahoe to the internal SSD** after reaching the Tahoe desktop.
 
 The macOS installer and operating-system installation use Apple's installer. The USB additionally carries the OCLP-Tahoe application and offline assets; root patches are applied afterwards, not during the macOS installation itself.
 
@@ -45,7 +45,7 @@ The macOS installer and operating-system installation use Apple's installer. The
 1. On your working macOS installation, install OCLP-Tahoe using its installer `.pkg`, then open the application. Monterey was used for the successful test.
 2. Use **Create macOS Installer** to download/select Tahoe 26.7.1 and create the installer on your USB drive. Double-check which drive you select: it will be erased.
 3. Wait for creation to finish. **The maintainer's successful USB creation took over 40 minutes.** A long creation time can be normal; elapsed time alone does not mean it has frozen. Keep the USB connected and wait for completion or an explicit error.
-4. When asked whether to build/install OpenCore, choose **Yes**. This builds the **Installer/First Boot** profile. Install it to the **same USB drive**, not the internal SSD at this stage. Wait for the installation-success message.
+4. After the USB has been created, OCLP-Tahoe asks whether you want to build/install OpenCore. Clicking **Yes automatically selects Installer/First Boot**. Check that this is the selected EFI option, then install it to the **same USB drive**, not the internal SSD at this stage. Carefully check the destination drive before confirming, and wait for the installation-success message.
 
 ### 2. Install Tahoe using the USB EFI throughout
 
