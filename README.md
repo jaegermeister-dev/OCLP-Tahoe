@@ -20,7 +20,7 @@ The root patcher targets **macOS Tahoe 26.7.1, build 25G241**. Do not assume new
 
 - **Follow every installation step below, in order, even if a step does not seem important.** In particular, selecting the correct EFI at each stage matters.
 - Back up your files and retain a way to boot a working macOS installation. Do not erase your only recovery option.
-- Use a **32 GB or larger USB drive**. The application requires at least 30 billion bytes of reported capacity. Creating the installer erases the selected USB drive.
+- Use a **32 GB or larger USB drive**. The stock Tahoe 26.7.1 installer is approximately **18.4 GB**; the completed USB uses approximately **22 GB**, including OCLP-Tahoe, its offline patch assets and the EFI. Creating the installer erases the selected USB drive.
 - Connect the Mac to power. Allow enough free internal storage for the installer download, extraction and macOS installation.
 - Internet is needed to obtain the application and download the macOS installer. **Root patching is self-contained and requires no downloads**: the application contains its required patch assets and is also bundled onto the installer USB. A working Wi-Fi connection or Ethernet dock is not required to apply root patches.
 - USB creation from **Monterey** has been tested successfully. Other host macOS versions have not all been tested.
@@ -34,7 +34,7 @@ The root patcher targets **macOS Tahoe 26.7.1, build 25G241**. Do not assume new
 | **Installer/First Boot** | On the USB: boots the Tahoe installer, installation restarts and the first unpatched Tahoe boot. Based on the captured official OCLP 3.0.0 beta-generated OpenCore 1.0.5 EFI. |
 | **Installed Tahoe** | On the internal SSD: installed after reaching the Tahoe desktop, before applying root patches. Reproduces the tested installed-system EFI. |
 
-Do not substitute one for the other during this procedure. The post-USB-creation prompt builds **Installer/First Boot**. The first-desktop EFI prompt selects **Installed Tahoe**.
+Do not substitute one for the other.
 
 The macOS installer and operating-system installation use Apple's installer. The USB additionally carries the OCLP-Tahoe application and offline assets; root patches are applied afterwards, not during the macOS installation itself.
 
