@@ -38,6 +38,14 @@ Do not substitute one for the other. **Before installing an EFI, carefully check
 
 The macOS installer and operating-system installation use Apple's installer. The USB additionally carries the OCLP-Tahoe application and offline assets; root patches are applied afterwards, not during the macOS installation itself.
 
+### Use OCLP-Tahoe to create the USB
+
+**Use OCLP-Tahoe's Create macOS Installer feature rather than creating the USB manually with `createinstallmedia`.** Manually creating the installer and separately building/installing its EFI could work, but this is **not the tested or recommended route**.
+
+Using `createinstallmedia` on its own does not add OCLP-Tahoe and its offline patch assets to the USB. You would need to arrange those separately, install OCLP-Tahoe yourself on the new Tahoe installation, manually build and install the **Installed Tahoe** EFI to the internal SSD, and then apply the root patches. Do not assume the automatic prompts from the tested procedure will be available on a manually prepared USB.
+
+Unpatched Tahoe can be extremely slow, making those extra manual steps time-consuming. **Creating the USB through OCLP-Tahoe is simpler:** it bundles the application and offline assets and prepares the guided installation process used in the successful test. Follow that route for this release.
+
 ## Installation instructions
 
 ### 1. Create the USB and install its EFI
@@ -101,7 +109,7 @@ These observations are from the **MacBookPro11,5** development and acceptance te
 - Comprehensive automatic graphics switching, complete M370X power-off, battery endurance, and extended graphics or thermal stress testing.
 - Apple ID/iCloud, App Store, Apple Music, iMessage, FaceTime and other Apple services. The individual Siri and Safari results above do not validate all Apple services.
 - Every older macOS installation booting through either generated EFI, including every official-OCLP-patched point release. Upstream EFI ancestry alone is not proof of all those combinations. Keep a known-working recovery boot option.
-- Application operation on every older host macOS version. The successful Monterey USB-creation test is the confirmed host result.
+- Using OCLP-Tahoe to create the USB on macOS versions other than Monterey. It may work, however it has not been tested. If you have issues creating the USB using another macOS version, it is advised to use Monterey.
 - Rejection of a real, newly offered macOS version update by the included update protection. Do not rely on that protection as permission to attempt an unsupported update.
 
 ## Updates
