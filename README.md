@@ -1,6 +1,12 @@
 # OCLP-Tahoe
 
 > [!WARNING]
+> **Keep a known-working OpenCore EFI backup on a separate USB stick.** Support for booting older macOS installations through OCLP-Tahoe's EFI has not been fully confirmed. Keep this backup available so you have an alternative way to boot your existing macOS installations if needed.
+
+> [!NOTE]
+> **You do not need to uninstall official OpenCore Legacy Patcher.** Official OCLP and OCLP-Tahoe can coexist as separate applications.
+
+> [!WARNING]
 > **Use a still image as your wallpaper.** Dynamic/animated wallpapers are currently buggy and can cause extreme lag, including after the wallpaper has finished changing.
 >
 > **Performance with a still wallpaper has been very good on the tested MacBookPro11,5.** If your system becomes sluggish after changing its wallpaper, switch to a still image.
