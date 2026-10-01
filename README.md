@@ -1,5 +1,10 @@
 # OCLP-Tahoe
 
+> [!WARNING]
+> **Use a still image as your wallpaper.** Dynamic/animated wallpapers are currently buggy and can cause extreme lag, including after the wallpaper has finished changing.
+>
+> **Performance with a still wallpaper has been very good on the tested MacBookPro11,5.** If your system becomes sluggish after changing its wallpaper, switch to a still image.
+
 > [!IMPORTANT]
 > **This is NOT a release from the official OpenCore Legacy Patcher (OCLP) team.** OCLP-Tahoe is independently developed and maintained, and is not affiliated with or supported by the official OCLP team.
 >
